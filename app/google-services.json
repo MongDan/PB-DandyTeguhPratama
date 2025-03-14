@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "815606847503",
+    "firebase_url": "https://apps1-b7597-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "apps1-b7597",
+    "storage_bucket": "apps1-b7597.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815606847503:android:596c4642354c30524beb7a",
+        "android_client_info": {
+          "package_name": "com.example.pertemuanpertama"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD_T7nbhLHYRqii0d4HEIhs8i9zxAXtW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815606847503:android:e6f6c04ed04583bf4beb7a",
+        "android_client_info": {
+          "package_name": "com.example.tugas2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD_T7nbhLHYRqii0d4HEIhs8i9zxAXtW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
