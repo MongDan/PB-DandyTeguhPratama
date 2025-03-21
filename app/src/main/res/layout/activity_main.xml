@@ -8,7 +8,6 @@
     android:id="@+id/main"
     tools:context=".MainActivity">
 
-    <!-- NestedScrollView untuk menggulung konten -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,11 +25,67 @@
                 android:text="SELAMAT DATANG "
                 android:textColor="@color/amber_500"
                 android:textSize="30dp"
-
                 android:layout_marginBottom="10dp"
                 android:layout_gravity="center"/>
 
-            <!-- CardView dengan Gambar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/content_style_xml"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Keuangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:src="@drawable/keuangan2"
+                        android:layout_marginRight="100dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keuangan"
+                        android:textColor="@color/purple_500"
+                        android:textSize="16sp"
+                        android:fontFamily="monospace"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/Tugas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:src="@drawable/job"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tugas"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/purple_500"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- CardView Profile -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -43,14 +98,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Gambar -->
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="400dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/profile" />
+                        android:src="@drawable/profile1" />
 
-                    <!-- Konten -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -69,7 +122,6 @@
                             android:layout_height="wrap_content"
                             android:text="Masukkan Data Anda.." />
 
-                        <!-- Tombol -->
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -79,7 +131,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- CardView dengan Warna Gradient -->
+            <!-- CardView Project -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,70 +142,41 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/gradient_background">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/pixel2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="PROJECT"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Project Abal-Abal"
-                        android:textColor="@android:color/white"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- CardView dengan Shadow dan Border -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp"
-                app:cardBackgroundColor="@android:color/white"
-                android:background="@drawable/border_card">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="16dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="400dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/pixel3" />
+                        android:src="@drawable/pixel2" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ALBUM"
-                        android:textSize="18sp"
-                        android:textStyle="bold"/>
+                        android:padding="16dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Kenangan Bersama-sama" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Detail proyek yang sedang berjalan." />
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
         </LinearLayout>
-
     </androidx.core.widget.NestedScrollView>
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
